@@ -20,8 +20,8 @@ def setup(request):
         s = Service(GeckoDriverManager().install())
         driver = webdriver.Firefox(service=s)
 
-    driver.get("https://rahulshettyacademy.com/angularpractice/")
-    driver.maximize_window()
+    # driver.get("https://rahulshettyacademy.com/angularpractice/")
+    # driver.maximize_window()
     request.cls.driver = driver
     yield
     driver.quit()
